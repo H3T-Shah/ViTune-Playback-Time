@@ -11,7 +11,7 @@ def getDataFromDB() -> None:
 
     cursor.execute(query)
 
-    FILE_DataFromDB = open("DataFromSQL_DB.txt", 'w')
+    FILE_DataFromDB = open("DataFromSQL_DB.py", 'w')
 
     result = cursor.fetchall()
     print(result, file=FILE_DataFromDB)
